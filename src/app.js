@@ -84,7 +84,7 @@ checkoutButton.addEventListener('click', async function (e) {
     const message = formatMessage(objData);
     const apiUrl = 'https://api.whatsapp.com/send';
     const params = {
-        phone: '62821-1093-6017',
+        phone: '62852-8074-2361',
         text: message
     };
     const queryString = new URLSearchParams(params).toString();
