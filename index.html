@@ -24,13 +24,17 @@
 
     <!-- App -->
     <script src="src/app.js" async></script>
+
+    <!-- midtrans -->
+    <script type="text/javascript" src="https://app.sandbox.midtrans.com/snap/snap.js"
+        data-client-key="SB-Mid-client-DS0fPPvpmx9_pmaH"></script>
 </head>
 
 <body>
 
     <!-- navbar start -->
     <nav class="navbar" x-data>
-        <a href="#" class="navbar-logo">Kenangan<span>Senja</span>.</a>
+        <a href="#" class="navbar-logo">Kedai <span class="color1">Bunda</span> <p>Adit.</p></a>
 
         <div class="navbar-nav">
             <a href="#home">Home</a>
@@ -97,7 +101,8 @@
                         <input type="number" name="phone" id="phone" autocomplete="off">
                     </label>
 
-                    <button class="checkout-button disabled" type="submit" id="checkout-button" value="Checkout">Checkout</button>
+                    <button class="checkout-button disabled" type="submit" id="checkout-button"
+                        value="Checkout">Checkout</button>
                 </form>
             </div>
         </div>
@@ -110,8 +115,8 @@
     <section class="hero" id="home">
         <div class="mask-container">
             <main class="content">
-                <h1>Mari Nikmati Secangkir <span>Kopi</span></h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, placeat?</p>
+                <h1>Mari Nikmati Cemilan Lezat</h1>
+                <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, placeat?</p> -->
             </main>
         </div>
     </section>
@@ -123,59 +128,20 @@
 
         <div class="row">
             <div class="about-img">
-                <img src="img/tentang-kami.jpg" alt="Tentang Kami">
+                <img src="img/about.jpg" alt="Tentang Kami">
             </div>
             <div class="content">
-                <h3>Kenapa memilih kopi kami?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, tempore! Porro explicabo ratione
-                    saepe aliquid!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet nulla sequi sed illo maiores,
-                    obcaecati ipsum eum veniam alias neque.</p>
+                <h3>Kenapa memilih kedai kami?</h3>
+                <p>Kami ingin menawarkan aneka cemilan siap saji.</p> 
+                <p>Walaupun Home Made tetapi untuk rasanya tidak kalah lho dengan yang di resto</p>
             </div>
         </div>
     </section>
     <!-- About Section End -->
 
-    <!-- Menu Section Start -->
-    <section id="menu" class="menu">
-        <h2><span>Menu</span> Kami</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic libero quidem fugiat odit impedit ad!</p>
-
-        <div class="row">
-            <div class="menu-card">
-                <img src="img/menu/menu-1.jpg" alt="Espresso" class="menu-card-image">
-                <h3 class="menu-card-title">- Espresso</h3>
-                <p class="menu-card-price">IDR 15K</p>
-            </div>
-            <div class="menu-card">
-                <img src="img/menu/menu-1.jpg" alt="Espresso" class="menu-card-image">
-                <h3 class="menu-card-title">- Espresso</h3>
-                <p class="menu-card-price">IDR 15K</p>
-            </div>
-            <div class="menu-card">
-                <img src="img/menu/menu-1.jpg" alt="Espresso" class="menu-card-image">
-                <h3 class="menu-card-title">- Espresso</h3>
-                <p class="menu-card-price">IDR 15K</p>
-            </div>
-            <div class="menu-card">
-                <img src="img/menu/menu-1.jpg" alt="Espresso" class="menu-card-image">
-                <h3 class="menu-card-title">- Espresso</h3>
-                <p class="menu-card-price">IDR 15K</p>
-            </div>
-            <div class="menu-card">
-                <img src="img/menu/menu-1.jpg" alt="Espresso" class="menu-card-image">
-                <h3 class="menu-card-title">- Espresso</h3>
-                <p class="menu-card-price">IDR 15K</p>
-            </div>
-        </div>
-    </section>
-    <!-- Menu Section End -->
-
     <!-- Produk Section Start -->
     <section class="products" id="products" x-data="products">
-        <h2><span>Produk Unggulan</span> Kami</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, molestias ipsa quibusdam consequatur
-            aperiam voluptates.</p>
+        <h2>Menu <span> Kami</span></h2>
 
         <div class="row">
             <template x-for="(item, index) in items" x-key="index">
@@ -185,12 +151,6 @@
                             <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <use href="img/feather-sprite.svg#shopping-cart" />
-                            </svg>
-                        </a>
-                        <a href="#">
-                            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <use href="img/feather-sprite.svg#eye" />
                             </svg>
                         </a>
                     </div>
@@ -216,7 +176,7 @@
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <use href="img/feather-sprite.svg#star" />
                             </svg>
-                            <svg width="24" height="24" fill="currentColor" stroke="currentColor" stroke-width="2"
+                            <svg width="24" height="24" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
                                 <use href="img/feather-sprite.svg#star" />
                             </svg>
