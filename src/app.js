@@ -117,10 +117,9 @@ checkoutButton.addEventListener('click', async function (e) {
 const formatMessage = (obj) => {
     return `Data Customer
     Nama: ${obj.name}
-    Email: ${obj.email}
     No HP: ${obj.phone}
     Data Pesanan
-    ${JSON.parse(obj.items).map((item) => `${item.name} (${item.quantity} x ${rupiah(item.total)})`).join('\n')}
+    ${JSON.parse(obj.items).map((item) => `${item.name} (${item.quantity} x ${rupiah(item.price)})`).join('\n')}
     Total: ${rupiah(obj.total)}
     Terima Kasih.`;
 }
